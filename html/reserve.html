@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserve a Table - CafeLove</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Favicon -->
+    <link rel="icon" href="images/i2.png" type="image/png">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/i1.png" alt="CafeLove Logo"> CafeLove
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="review.html">Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="reserve.html">Reserve a Table</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="section-title">Reserve a Table</h1>
+                    <p class="lead">Plan your perfect coffee moment</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Alerts -->
+    <div class="container" id="alertContainer" style="max-width: 900px;"></div>
+
+    <!-- Reservation Form -->
+    <section class="section-padding">
+        <div class="container" style="max-width: 900px;">
+            <form id="reservationForm" class="reservation-form needs-validation" novalidate method="POST" action="php/reserve.php">
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <label for="name" class="form-label">Full Name</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                        <div class="invalid-feedback">Please enter your name.</div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                        <div class="invalid-feedback">Please provide a valid email.</div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="phone" class="form-label">Phone</label>
+                        <input type="tel" class="form-control" id="phone" name="phone" required>
+                        <div class="invalid-feedback">Please provide a phone number.</div>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="date" class="form-label">Date</label>
+                        <input type="date" class="form-control" id="date" name="date" required>
+                        <div class="invalid-feedback">Please select a date.</div>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="time" class="form-label">Time</label>
+                        <input type="time" class="form-control" id="time" name="time" required>
+                        <div class="invalid-feedback">Please select a time.</div>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="guests" class="form-label">Guests</label>
+                        <input type="number" class="form-control" id="guests" name="guests" min="1" max="20" value="2" required>
+                        <div class="invalid-feedback">Please select number of guests.</div>
+                    </div>
+                    <div class="col-12">
+                        <label for="message" class="form-label">Special Requests</label>
+                        <textarea class="form-control" id="message" name="message" rows="4" placeholder="Optional"></textarea>
+                    </div>
+                </div>
+                <div class="text-center mt-4">
+                    <button type="submit" class="btn btn-custom">Book Now</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <img src="images/i1.png" alt="CafeLove Logo" height="50" class="mb-3">
+                    <h5>CafeLove</h5>
+                    <p>Your cozy spot for the perfect brew</p>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5>Hours</h5>
+                    <p>Monday - Friday: 7am - 9pm</p>
+                    <p>Saturday - Sunday: 8am - 10pm</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Connect With Us</h5>
+                    <div class="d-flex justify-content-center">
+                        <a href="#" class="text-light me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-light me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-light"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <p>&copy; 2023 CafeLove. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+    <script>
+        // Show success/error alerts based on query params
+        (function() {
+            const params = new URLSearchParams(window.location.search);
+            const container = document.getElementById('alertContainer');
+            if (!container) return;
+            if (params.get('success') === '1') {
+                container.innerHTML = '<div class="alert alert-success" role="alert">Your reservation has been received. We\'ll email you the confirmation shortly.</div>';
+            } else if (params.get('error') === '1') {
+                container.innerHTML = '<div class="alert alert-danger" role="alert">There was a problem submitting your reservation. Please try again.</div>';
+            }
+        })();
+        // Set min date to today
+        (function() {
+            const dateInput = document.getElementById('date');
+            if (dateInput) {
+                const today = new Date();
+                const yyyy = today.getFullYear();
+                const mm = String(today.getMonth() + 1).padStart(2, '0');
+                const dd = String(today.getDate()).padStart(2, '0');
+                dateInput.min = `${yyyy}-${mm}-${dd}`;
+            }
+        })();
+    </script>
+</body>
+</html>

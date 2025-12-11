@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - CafeLove</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Favicon -->
+    <link rel="icon" href="images/i2.png" type="image/png">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/i1.png" alt="CafeLove Logo"> CafeLove
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="review.html">Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reserve.html">Reserve a Table</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="section-title">Our Menu</h1>
+                    <p class="lead">Discover our delicious offerings</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Filters -->
+    <section class="section-padding bg-dark">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <ul class="nav nav-pills justify-content-center mb-5" id="menuFilters">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-bs-toggle="pill" href="#all">All Items</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="pill" href="#coffee">Coffee</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="pill" href="#tea">Tea</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="pill" href="#desserts">Desserts</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Menu Items -->
+            <div class="tab-content">
+                <div id="all" class="tab-pane active">
+                    <div class="row">
+                        <!-- Coffee Items -->
+                        <div class="col-md-4 mb-4">
+                            <div class="menu-card">
+                                <img src="images/mc1.jpg" alt="Espresso">
+                                <div class="menu-overlay">
+                                    <h4>Espresso</h4>
+                                    <p>Strong and rich</p>
+                                    <span class="text-accent">Rs. 600</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="menu-card">
+                                <img src="images/mc2.jpg" alt="Cappuccino">
+                                <div class="menu-overlay">
+                                    <h4>Cappuccino</h4>
+                                    <p>Perfect balance of espresso and milk</p>
+                                    <span class="text-accent">Rs. 900</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="menu-card">
+                                <img src="images/mc3.jpg" alt="Latte">
+                                <div class="menu-overlay">
+                                    <h4>Latte</h4>
+                                    <p>Creamy and smooth</p>
+                                    <span class="text-accent">Rs. 800</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="menu-card">
+                                <img src="images/mc4.jpg" alt="Mocha">
+                                <div class="menu-overlay">
+                                    <h4>Mocha</h4>
+                                    <p>Chocolate and coffee combination</p>
+                                    <span class="text-accent">Rs. 950</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tea Items -->
+                        <div class="col-md-4 mb-4">
+                            <div class="menu-card">
+                                <img src="images/mb1.jpg" alt="Chai Latte">
+                                <div class="menu-overlay">
+                                    <h4>Chai Latte</h4>
+                                    <p>Spiced tea with steamed milk</p>
+                                    <span class="text-accent">Rs. 750</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Dessert Items -->
+                        <div class="col-md-4 mb-4">
+                            <div class="menu-card">
+                                <img src="images/cheesecake.jpg" alt="Cheesecake">
+                                <div class="menu-overlay">
+                                    <h4>Cheesecake</h4>
+                                    <p>Creamy and rich</p>
+                                    <span class="text-accent">Rs. 950</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="menu-card">
+                                <img src="images/tirasimu.jpg" alt="Tiramisu">
+                                <div class="menu-overlay">
+                                    <h4>Tiramisu</h4>
+                                    <p>Classic Italian dessert</p>
+                                    <span class="text-accent">Rs. 1000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Coffee Tab -->
+                <div id="coffee" class="tab-pane fade">
+                    <div class="row">
+                        <div class="col-md-4 mb-4">
+                            <div class="menu-card">
+                                <img src="images/mc1.jpg" alt="Espresso">
+                                <div class="menu-overlay">
+                                    <h4>Espresso</h4>
+                                    <p>Strong and rich</p>
+                                    <span class="text-accent">Rs. 600</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="menu-card">
+                                <img src="images/mc2.jpg" alt="Cappuccino">
+                                <div class="menu-overlay">
+                                    <h4>Cappuccino</h4>
+                                    <p>Perfect balance of espresso and milk</p>
+                                    <span class="text-accent">Rs. 900</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="menu-card">
+                                <img src="images/mc3.jpg" alt="Latte">
+                                <div class="menu-overlay">
+                                    <h4>Latte</h4>
+                                    <p>Creamy and smooth</p>
+                                    <span class="text-accent">Rs. 800</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="menu-card">
+                                <img src="images/mc4.jpg" alt="Mocha">
+                                <div class="menu-overlay">
+                                    <h4>Mocha</h4>
+                                    <p>Chocolate and coffee combination</p>
+                                    <span class="text-accent">Rs. 950</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tea Tab -->
+                <div id="tea" class="tab-pane fade">
+                    <div class="row">
+                        <div class="col-md-4 mb-4">
+                            <div class="menu-card">
+                                <img src="images/mb1.jpg" alt="Chai Latte">
+                                <div class="menu-overlay">
+                                    <h4>Chai Latte</h4>
+                                    <p>Spiced tea with steamed milk</p>
+                                    <span class="text-accent">Rs. 750</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Desserts Tab -->
+                <div id="desserts" class="tab-pane fade">
+                    <div class="row">
+                        <div class="col-md-4 mb-4">
+                            <div class="menu-card">
+                                <img src="images/cheesecake.jpg" alt="Cheesecake">
+                                <div class="menu-overlay">
+                                    <h4>Cheesecake</h4>
+                                    <p>Creamy and rich</p>
+                                    <span class="text-accent">Rs. 950</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="menu-card">
+                                <img src="images/tirasimu.jpg" alt="Tiramisu">
+                                <div class="menu-overlay">
+                                    <h4>Tiramisu</h4>
+                                    <p>Classic Italian dessert</p>
+                                    <span class="text-accent">Rs. 1000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <img src="images/i1.png" alt="CafeLove Logo" height="50" class="mb-3">
+                    <h5>CafeLove</h5>
+                    <p>Your cozy spot for the perfect brew</p>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5>Hours</h5>
+                    <p>Monday - Friday: 7am - 9pm</p>
+                    <p>Saturday - Sunday: 8am - 10pm</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Connect With Us</h5>
+                    <div class="d-flex justify-content-center">
+                        <a href="#" class="text-light me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-light me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-light"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <p>&copy; 2023 CafeLove. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
